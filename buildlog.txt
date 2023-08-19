@@ -1,0 +1,152 @@
+[1m[32m==>(B[m[1m Making package: dnsrecon 2:1.1.5-1 (Sun Aug 20 03:31:35 2023)(B[m
+[1m[32m==>(B[m[1m Checking runtime dependencies...(B[m
+[1m[32m==>(B[m[1m Installing missing dependencies...(B[m
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (9) python-entrypoints-0.4-3  python-iniconfig-2.0.0-4  python-mccabe-0.7.0-5  python-pycodestyle-2.11.0-1  python-pyflakes-3.1.0-1  flake8-1:6.1.0-1  python-dnspython-1:2.3.0-3  python-netaddr-0.8.0-7  python-pytest-7.4.0-1
+
+Total Installed Size:  17.66 MiB
+
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Processing package changes...
+installing python-netaddr...
+Optional dependencies for python-netaddr
+    ipython: netaddr interractive command support
+installing python-dnspython...
+Optional dependencies for python-dnspython
+    python-cryptography: DNSSEC support [installed]
+    python-requests-toolbelt: DoH support
+    python-idna: support for updated IDNA 2008 [installed]
+    python-curio: async support
+    python-trio: async support
+    python-sniffio: async support
+installing python-pyflakes...
+installing python-mccabe...
+installing python-pycodestyle...
+installing python-entrypoints...
+installing flake8...
+installing python-iniconfig...
+installing python-pytest...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+[1m[32m==>(B[m[1m Checking buildtime dependencies...(B[m
+[1m[32m==>(B[m[1m Retrieving sources...(B[m
+[1m[34m  ->(B[m[1m Cloning dnsrecon git repo...(B[m
+[1m[32m==>(B[m[1m Validating source files with sha512sums...(B[m
+[1m[32m==>(B[m[1m Extracting sources...(B[m
+[1m[34m  ->(B[m[1m Creating working copy of dnsrecon git repo...(B[m
+[1m[32m==>(B[m[1m Starting pkgver()...(B[m
+[1m[32m==>(B[m[1m Updated version: dnsrecon 2:1.1.5-1(B[m
+[1m[32m==>(B[m[1m Starting build()...(B[m
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/dnsrecon
+copying dnsrecon/cli.py -> build/lib/dnsrecon
+copying dnsrecon/__init__.py -> build/lib/dnsrecon
+copying dnsrecon/__main__.py -> build/lib/dnsrecon
+creating build/lib/dnsrecon/lib
+copying dnsrecon/lib/whois.py -> build/lib/dnsrecon/lib
+copying dnsrecon/lib/__init__.py -> build/lib/dnsrecon/lib
+copying dnsrecon/lib/tlds.py -> build/lib/dnsrecon/lib
+copying dnsrecon/lib/yandexenum.py -> build/lib/dnsrecon/lib
+copying dnsrecon/lib/msf_print.py -> build/lib/dnsrecon/lib
+copying dnsrecon/lib/crtenum.py -> build/lib/dnsrecon/lib
+copying dnsrecon/lib/dnshelper.py -> build/lib/dnsrecon/lib
+copying dnsrecon/lib/bingenum.py -> build/lib/dnsrecon/lib
+[1m[32m==>(B[m[1m Entering fakeroot environment...(B[m
+[1m[32m==>(B[m[1m Starting package()...(B[m
+running install
+running install_lib
+creating /home/catboii/test-dnsrecon/pkg/dnsrecon/usr
+creating /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib
+creating /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib/python3.11
+creating /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib/python3.11/site-packages
+creating /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib/python3.11/site-packages/dnsrecon
+creating /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib/python3.11/site-packages/dnsrecon/lib
+copying build/lib/dnsrecon/lib/whois.py -> /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib/python3.11/site-packages/dnsrecon/lib
+copying build/lib/dnsrecon/lib/__init__.py -> /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib/python3.11/site-packages/dnsrecon/lib
+copying build/lib/dnsrecon/lib/tlds.py -> /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib/python3.11/site-packages/dnsrecon/lib
+copying build/lib/dnsrecon/lib/yandexenum.py -> /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib/python3.11/site-packages/dnsrecon/lib
+copying build/lib/dnsrecon/lib/msf_print.py -> /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib/python3.11/site-packages/dnsrecon/lib
+copying build/lib/dnsrecon/lib/crtenum.py -> /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib/python3.11/site-packages/dnsrecon/lib
+copying build/lib/dnsrecon/lib/dnshelper.py -> /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib/python3.11/site-packages/dnsrecon/lib
+copying build/lib/dnsrecon/lib/bingenum.py -> /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib/python3.11/site-packages/dnsrecon/lib
+copying build/lib/dnsrecon/cli.py -> /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib/python3.11/site-packages/dnsrecon
+copying build/lib/dnsrecon/__init__.py -> /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib/python3.11/site-packages/dnsrecon
+copying build/lib/dnsrecon/__main__.py -> /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib/python3.11/site-packages/dnsrecon
+byte-compiling /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib/python3.11/site-packages/dnsrecon/lib/whois.py to whois.cpython-311.pyc
+byte-compiling /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib/python3.11/site-packages/dnsrecon/lib/__init__.py to __init__.cpython-311.pyc
+byte-compiling /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib/python3.11/site-packages/dnsrecon/lib/tlds.py to tlds.cpython-311.pyc
+byte-compiling /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib/python3.11/site-packages/dnsrecon/lib/yandexenum.py to yandexenum.cpython-311.pyc
+byte-compiling /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib/python3.11/site-packages/dnsrecon/lib/msf_print.py to msf_print.cpython-311.pyc
+byte-compiling /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib/python3.11/site-packages/dnsrecon/lib/crtenum.py to crtenum.cpython-311.pyc
+byte-compiling /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib/python3.11/site-packages/dnsrecon/lib/dnshelper.py to dnshelper.cpython-311.pyc
+byte-compiling /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib/python3.11/site-packages/dnsrecon/lib/bingenum.py to bingenum.cpython-311.pyc
+byte-compiling /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib/python3.11/site-packages/dnsrecon/cli.py to cli.cpython-311.pyc
+byte-compiling /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib/python3.11/site-packages/dnsrecon/__init__.py to __init__.cpython-311.pyc
+byte-compiling /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib/python3.11/site-packages/dnsrecon/__main__.py to __main__.cpython-311.pyc
+writing byte-compilation script '/tmp/tmplz7pqu_x.py'
+/usr/bin/python /tmp/tmplz7pqu_x.py
+removing /tmp/tmplz7pqu_x.py
+running install_data
+creating /home/catboii/test-dnsrecon/pkg/dnsrecon/etc
+creating /home/catboii/test-dnsrecon/pkg/dnsrecon/etc/dnsrecon
+copying namelist.txt -> /home/catboii/test-dnsrecon/pkg/dnsrecon/etc/dnsrecon
+copying snoop.txt -> /home/catboii/test-dnsrecon/pkg/dnsrecon/etc/dnsrecon
+copying subdomains-top1mil-20000.txt -> /home/catboii/test-dnsrecon/pkg/dnsrecon/etc/dnsrecon
+copying subdomains-top1mil-5000.txt -> /home/catboii/test-dnsrecon/pkg/dnsrecon/etc/dnsrecon
+copying subdomains-top1mil.txt -> /home/catboii/test-dnsrecon/pkg/dnsrecon/etc/dnsrecon
+running install_egg_info
+running egg_info
+creating dnsrecon.egg-info
+writing dnsrecon.egg-info/PKG-INFO
+writing dependency_links to dnsrecon.egg-info/dependency_links.txt
+writing entry points to dnsrecon.egg-info/entry_points.txt
+writing requirements to dnsrecon.egg-info/requires.txt
+writing top-level names to dnsrecon.egg-info/top_level.txt
+writing manifest file 'dnsrecon.egg-info/SOURCES.txt'
+reading manifest file 'dnsrecon.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'dnsrecon.egg-info/SOURCES.txt'
+Copying dnsrecon.egg-info to /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/lib/python3.11/site-packages/dnsrecon-1.1.5-py3.11.egg-info
+running install_scripts
+Installing dnsrecon script to /home/catboii/test-dnsrecon/pkg/dnsrecon/usr/bin
+[1m[32m==>(B[m[1m Tidying install...(B[m
+[1m[34m  ->(B[m[1m Removing libtool files...(B[m
+[1m[34m  ->(B[m[1m Purging unwanted files...(B[m
+[1m[34m  ->(B[m[1m Removing static library files...(B[m
+[1m[34m  ->(B[m[1m Stripping unneeded symbols from binaries and libraries...(B[m
+[1m[34m  ->(B[m[1m Compressing man and info pages...(B[m
+[1m[32m==>(B[m[1m Checking for packaging issues...(B[m
+[1m[32m==>(B[m[1m Creating package "dnsrecon"...(B[m
+[1m[34m  ->(B[m[1m Generating .PKGINFO file...(B[m
+[1m[34m  ->(B[m[1m Generating .BUILDINFO file...(B[m
+[1m[34m  ->(B[m[1m Generating .MTREE file...(B[m
+[1m[34m  ->(B[m[1m Compressing package...(B[m
+[1m[32m==>(B[m[1m Leaving fakeroot environment.(B[m
+[1m[32m==>(B[m[1m Finished making: dnsrecon 2:1.1.5-1 (Sun Aug 20 03:31:42 2023)(B[m
+[1m[32m==>(B[m[1m Installing package dnsrecon with pacman -U...(B[m
+loading packages...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) dnsrecon-2:1.1.5-1
+
+Total Installed Size:  1.70 MiB
+
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Processing package changes...
+installing dnsrecon...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
